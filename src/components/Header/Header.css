@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Crimson+Text&family=Lexend:wght@500&family=Montserrat:ital,wght@0,300;1,600&display=swap');
+
+.header{
+    display: flex;
+    align-items: center;
+    color: black !important;
+    
+    top: 0;
+    position: sticky;
+    z-index: 2000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to right, rgba(0,0,0,0.1),rgba(0,0,0,0)),url(../../assets/back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.header_left{
+    display: flex;
+    align-items: center;
+    flex: 0.4;
+    justify-content: center;
+    
+}
+
+
+
+.header_right{
+    display: flex;
+    flex: 0.7;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header_right > a > h4{
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 200ms ease-in-out;
+    font-family: "Lexend" , serif;
+    color: rgba(180,0,4,255);
+    margin: 15px 0;
+    padding: 5px 20px;
+    letter-spacing: 0.01px;
+    background: rgba( 212, 212, 212, 0.05 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 2.5px );
+-webkit-backdrop-filter: blur( 2.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.header_right>a>h4:hover{
+    transform: scale(1.07);
+    background-color: rgba( 0, 109, 255, 0.8 );
+    color: white;
+    padding: 5px 20px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    font-family: "Lexend" , serif;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+img {
+    cursor: pointer;
+    width: 150px;
+    justify-content: center; /* Remove this line */
+    margin: 0 auto; /* Center the image horizontally */
+    display: block; /* Make the image a block element to center it properly */
+}
+
+@media screen and (max-width: 768px) {
+    .header{
+        background-size: 100%; /* Adjust background size for mobile screens */
+    background-attachment: fixed;
+    }
+
+    .header_right.active {
+        display: flex;
+        flex-direction: column; /* Display links vertically for phones */
+        text-align: center; /* Center-align links */
+    }
+
+    .nav-toggle {
+        position: absolute;
+        top: 10px; /* Adjust this value to control the distance from the top */
+        right: 10px; /* Adjust this value to control the distance from the right */
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 34px; /* Adjust the font size as needed */
+        color: black; /* Adjust the color as needed */
+        padding: 5px;
+        z-index: 1000; /* Ensure it's above other content if needed */
+      }
+      
+
+    .nav-toggle span {
+        transform: rotate(0deg);
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .header_right > a > h4 {
+        /* Add any additional styling for phone navigation links */
+        font-size: 16px; /* Adjust font size for phones */
+        padding: 10px 0; /* Adjust padding for spacing */
+        display: none; /* Initially hide the navigation links */
+    }
+
+    .header_right.active > a > h4 {
+        display: block; /* Show the navigation links when active */
+    }
+}
+
+/* Additional CSS for larger screens (hide the button) */
+@media screen and (min-width: 769px) {
+    .nav-toggle {
+        display: none; /* Hide the button on larger screens */
+    }
+}

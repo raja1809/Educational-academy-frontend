@@ -1,0 +1,22 @@
+a{
+  text-decoration: none;
+  color: white;
+}
+
+
+
+.app{
+  background: url(./assets/back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@media screen and (max-width: 768px) {
+  .app {
+    background-repeat: no-repeat ;
+    background: url(./assets/back.jpg); /* Replace with mobile-specific image */
+    background-size: 100%; /* Adjust background size for mobile screens */
+    background-attachment: fixed; /* Change attachment to scroll for mobile screens */
+  }
+}

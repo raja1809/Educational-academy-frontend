@@ -1,0 +1,69 @@
+.about{
+  background: rgba( 16, 1, 1, 0.8 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 7px );
+  -webkit-backdrop-filter: blur( 7px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+    color: white;
+    margin: 70px 0 70px;
+    border-radius: 30px
+}
+
+.about-us {
+    padding: 20px;
+    margin: 30px;
+    padding: 100px 0 00px;
+    
+  }
+  
+  .about-us h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: orange;
+  }
+  
+  .about-us h2 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: aqua;
+  }
+  
+  .about-us p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .about-us ul {
+    list-style: disc;
+    margin-left: 20px;
+  }
+  .rr{
+    margin: 30px;
+    
+    
+  }
+
+  @media screen and (max-width: 768px) {
+    .about-us{
+      padding: 50px 0 50px;
+    }
+    .about-us h1 {
+        font-size: 20px; /* Adjust h1 font size for smaller screens */
+    }
+
+    .about-us h2 {
+        font-size: 18px; /* Adjust h2 font size for smaller screens */
+    }
+
+    .about-us p {
+        font-size: 14px; /* Adjust paragraph font size for smaller screens */
+        line-height: 1.5; /* Adjust line height for smaller screens if needed */
+    }
+
+    .about-us ul {
+        font-size: 14px; /* Adjust list font size for smaller screens */
+    }
+}
